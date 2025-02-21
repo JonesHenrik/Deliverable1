@@ -4,12 +4,15 @@ Console.WriteLine("Welcome to the restocking tool.\n");
 
 var stockSoda = 100;
 const int restockSoda = 100;
+const int minSodaStock = 40;
 
 var stockChips = 40;
 const int restockChips = 40;
+const int minChipsStock = 40;
 
 var stockCandy = 60;
 const int restockCandy = 60;
+const int minCandyStock = 40;
 
 var needToRestockSoda = false;
 var needToRestockChips = false;
@@ -23,7 +26,7 @@ if (soldSoda <= stockSoda)
 {
     stockSoda -= soldSoda;
     Console.WriteLine($"There are {stockSoda} sodas left\n");
-    if (stockSoda <= 40)
+    if (stockSoda <= minSodaStock)
     {
         stockSoda = restockSoda;
         needToRestockSoda = true;
@@ -42,7 +45,7 @@ if (soldChips <= stockChips)
 {
     stockChips -= soldChips;
     Console.WriteLine($"There are {stockChips} chips left\n");
-    if (stockChips <= 40)
+    if (stockChips <= minChipsStock)
     {
         stockChips = restockChips;
         needToRestockChips = true;
@@ -61,7 +64,7 @@ if (soldCandy <= stockCandy)
 {
     stockCandy -= soldCandy;
     Console.WriteLine($"There are {stockCandy} candy left\n");
-    if (stockCandy <= 40)
+    if (stockCandy <= minCandyStock)
     {
         stockCandy = restockCandy;
         needToRestockCandy = true;
