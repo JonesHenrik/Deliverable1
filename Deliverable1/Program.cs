@@ -2,22 +2,22 @@
 
 Console.WriteLine("Welcome to the restocking tool.\n");
 
-int stockSoda = 100;
-int restockSoda = 100;
+var stockSoda = 100;
+const int restockSoda = 100;
 
-int stockChips = 40;
-int restockChips = 40;
+var stockChips = 40;
+const int restockChips = 40;
 
-int stockCandy = 60;
-int restockCandy = 60;
+var stockCandy = 60;
+const int restockCandy = 60;
 
-bool needToRestockSoda = false;
-bool needToRestockChips = false;
-bool needToRestockCandy = false;
+var needToRestockSoda = false;
+var needToRestockChips = false;
+var needToRestockCandy = false;
 
 // User Input
 Console.WriteLine($"How many Sodas have been sold today? {stockSoda} are in stock");
-int soldSoda = Convert.ToInt32(Console.ReadLine());
+var soldSoda = Convert.ToInt32(Console.ReadLine());
 
 if (soldSoda <= stockSoda)
 {
@@ -36,7 +36,7 @@ else
 }
 
 Console.WriteLine($"How many Chips have been sold today? {stockChips} are in stock");
-int soldChips = Convert.ToInt32(Console.ReadLine());
+var soldChips = Convert.ToInt32(Console.ReadLine());
 
 if (soldChips <= stockChips)
 {
@@ -55,7 +55,7 @@ else
 }
 
 Console.WriteLine($"How much Candy has been sold today? {stockCandy} are in stock");
-int soldCandy = Convert.ToInt32(Console.ReadLine());
+var soldCandy = Convert.ToInt32(Console.ReadLine());
 
 if (soldCandy <= stockCandy)
 {
@@ -76,22 +76,24 @@ else
 // Stock Summary
 Console.WriteLine("Thank you for filling out the values. Here's what needs to be restocked.");
 
-if (needToRestockSoda == true)
+if (needToRestockSoda)
 {
-    Console.WriteLine("Sodas need to be restocked.\n\nGoodbye!");
+    Console.WriteLine("Sodas need to be restocked.\n");
 }
 
-if (needToRestockChips == true)
+if (needToRestockChips)
 {
-    Console.WriteLine("Chips need to be restocked.\n\nGoodbye!");
+    Console.WriteLine("Chips need to be restocked.\n");
 }
 
-if (needToRestockCandy == true)
+if (needToRestockCandy)
 {
-    Console.WriteLine("Candy needs to be restocked.\n\nGoodbye!");
+    Console.WriteLine("Candy needs to be restocked.\n");
 }
 
 if (needToRestockSoda == false && needToRestockChips == false && needToRestockCandy == false)
 {
-    Console.WriteLine("Nothing need to be restocked.\n\nGoodbye!");
+    Console.WriteLine("Nothing need to be restocked.\n");
 }
+
+Console.WriteLine("\nGoodbye!");
