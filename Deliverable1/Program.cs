@@ -81,17 +81,17 @@ Console.WriteLine("Thank you for filling out the values. Here's what needs to be
 
 if (needToRestockSoda)
 {
-    Console.WriteLine("Sodas need to be restocked.\n");
+    Console.WriteLine("Sodas need to be restocked.");
 }
 
 if (needToRestockChips)
 {
-    Console.WriteLine("Chips need to be restocked.\n");
+    Console.WriteLine("Chips need to be restocked.");
 }
 
 if (needToRestockCandy)
 {
-    Console.WriteLine("Candy needs to be restocked.\n");
+    Console.WriteLine("Candy needs to be restocked.");
 }
 
 if (needToRestockSoda == false && needToRestockChips == false && needToRestockCandy == false)
