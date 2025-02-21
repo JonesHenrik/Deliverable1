@@ -1,0 +1,15 @@
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/bin/Debug/net9.0/Deliverable1
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/bin/Debug/net9.0/Deliverable1.deps.json
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/bin/Debug/net9.0/Deliverable1.runtimeconfig.json
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/bin/Debug/net9.0/Deliverable1.dll
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/bin/Debug/net9.0/Deliverable1.pdb
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/Deliverable1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/Deliverable1.AssemblyInfoInputs.cache
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/Deliverable1.AssemblyInfo.cs
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/Deliverable1.csproj.CoreCompileInputs.cache
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/Deliverable1.sourcelink.json
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/Deliverable1.dll
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/refint/Deliverable1.dll
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/Deliverable1.pdb
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/Deliverable1.genruntimeconfig.cache
+/Users/henrikjones/RiderProjects/Deliverable1/Deliverable1/obj/Debug/net9.0/ref/Deliverable1.dll
