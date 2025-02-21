@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Welcome to the restocking tool.");
+Console.WriteLine("Welcome to the restocking tool.\n");
 
 int stockSoda = 100;
 int restockSoda = 100;
@@ -11,6 +11,11 @@ int restockChips = 40;
 int stockCandy = 60;
 int restockCandy = 60;
 
+bool needToRestockSoda = false;
+bool needToRestockChips = false;
+bool needToRestockCandy = false;
+
+// User Input
 Console.WriteLine($"How many Sodas have been sold today? {stockSoda} are in stock");
 int soldSoda = Convert.ToInt32(Console.ReadLine());
 
@@ -21,16 +26,16 @@ if (soldSoda <= stockSoda)
     if (stockSoda <= 40)
     {
         stockSoda = restockSoda;
-        // set a value to true so that it will be printed in summary
+        needToRestockSoda = true;
     }
    
 }
 else
 {
-    Console.WriteLine("That value is too high. Stock not adjusted");
+    Console.WriteLine("That value is too high. Stock not adjusted\n");
 }
 
-Console.WriteLine($"How many Sodas have been sold today? {stockChips} are in stock");
+Console.WriteLine($"How many Chips have been sold today? {stockChips} are in stock");
 int soldChips = Convert.ToInt32(Console.ReadLine());
 
 if (soldChips <= stockChips)
@@ -40,16 +45,16 @@ if (soldChips <= stockChips)
     if (stockChips <= 40)
     {
         stockChips = restockChips;
-        // set a value to true so that it will be printed in summary
+        needToRestockChips = true;
     }
    
 }
 else
 {
-    Console.WriteLine("That value is too high. Stock not adjusted");
+    Console.WriteLine("That value is too high. Stock not adjusted\n");
 }
 
-Console.WriteLine($"How many Sodas have been sold today? {stockCandy} are in stock");
+Console.WriteLine($"How much Candy has been sold today? {stockCandy} are in stock");
 int soldCandy = Convert.ToInt32(Console.ReadLine());
 
 if (soldCandy <= stockCandy)
@@ -59,11 +64,34 @@ if (soldCandy <= stockCandy)
     if (stockCandy <= 40)
     {
         stockCandy = restockCandy;
-        // set a value to true so that it will be printed in summary
+        needToRestockCandy = true;
     }
    
 }
 else
 {
-    Console.WriteLine("That value is too high. Stock not adjusted");
+    Console.WriteLine("That value is too high. Stock not adjusted\n");
+}
+
+// Stock Summary
+Console.WriteLine("Thank you for filling out the values. Here's what needs to be restocked.");
+
+if (needToRestockSoda == true)
+{
+    Console.WriteLine("Sodas need to be restocked.\n\nGoodbye!");
+}
+
+if (needToRestockChips == true)
+{
+    Console.WriteLine("Chips need to be restocked.\n\nGoodbye!");
+}
+
+if (needToRestockCandy == true)
+{
+    Console.WriteLine("Candy needs to be restocked.\n\nGoodbye!");
+}
+
+if (needToRestockSoda == false && needToRestockChips == false && needToRestockCandy == false)
+{
+    Console.WriteLine("Nothing need to be restocked.\n\nGoodbye!");
 }
